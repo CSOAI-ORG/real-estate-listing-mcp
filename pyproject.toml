@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "real-estate-listing-mcp"
+version = "1.0.0"
+description = "MCP server for real estate - property valuation, listing generation, comparable sales, mortgage calculator, neighborhood analysis"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "MEOK AI Labs", email = "hello@meok.ai" },
+]
+keywords = ["mcp", "real-estate", "property", "valuation", "mortgage", "listing"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = [
+    "mcp>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://meok.ai"
+Repository = "https://github.com/meok-ai/real-estate-listing-mcp"
+Documentation = "https://meok.ai/docs"
+Issues = "https://github.com/meok-ai/real-estate-listing-mcp/issues"
+
+[project.scripts]
+real-estate-listing-mcp = "server:mcp.run"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]

@@ -1,0 +1,10 @@
+name: real-estate-listing-mcp
+description: "MEOK AI Labs — Built by MEOK AI Labs | https://meok.ai"
+vendor: MEOK AI Labs
+homepage: https://meok.ai
+repository: https://github.com/CSOAI-ORG/real-estate-listing-mcp
+license: MIT
+categories: [Real Estate, Business]
+tags: [real-estate, property-listing, mls, property-valuation, housing-market]
+runtime: python
+entrypoint: server.py

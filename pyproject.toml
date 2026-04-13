@@ -5,23 +5,18 @@ build-backend = "hatchling.build"
 [project]
 name = "real-estate-listing-mcp"
 version = "1.0.0"
-description = "MCP server for real estate - property valuation, listing generation, comparable sales, mortgage calculator, neighborhood analysis"
+description = "MEOK AI Labs — Built by MEOK AI Labs | https://meok.ai"
+authors = [{name="MEOK AI Labs", email="nicholas@meok.ai"}]
 readme = "README.md"
-license = "MIT"
+license = {text = "MIT"}
 requires-python = ">=3.10"
-authors = [
-    { name = "MEOK AI Labs", email = "hello@meok.ai" },
-]
-keywords = ["mcp", "real-estate", "property", "valuation", "mortgage", "listing"]
+keywords = ["mcp", "mcp-server", "model-context-protocol", "claude", "ai-tools", "meok-ai-labs", "real-estate", "property-listing", "mls", "property-valuation", "housing-market"]
 classifiers = [
     "Development Status :: 4 - Beta",
-    "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12",
-    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Intended Audience :: Developers",
 ]
 dependencies = [
     "mcp>=1.0.0",
@@ -29,12 +24,6 @@ dependencies = [
 
 [project.urls]
 Homepage = "https://meok.ai"
-Repository = "https://github.com/meok-ai/real-estate-listing-mcp"
-Documentation = "https://meok.ai/docs"
-Issues = "https://github.com/meok-ai/real-estate-listing-mcp/issues"
-
-[project.scripts]
-real-estate-listing-mcp = "server:mcp.run"
-
-[tool.hatch.build.targets.wheel]
-packages = ["."]
+Repository = "https://github.com/CSOAI-ORG/real-estate-listing-mcp"
+Documentation = "https://meok.ai/docs/real-estate-listing-mcp"
+"Bug Tracker" = "https://github.com/CSOAI-ORG/real-estate-listing-mcp/issues"

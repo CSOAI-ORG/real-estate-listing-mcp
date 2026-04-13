@@ -1,0 +1,24 @@
+{
+  "name": "real-estate-listing-mcp",
+  "description": "MEOK AI Labs \u2014 Built by MEOK AI Labs | https://meok.ai",
+  "vendor": "MEOK AI Labs",
+  "homepage": "https://meok.ai",
+  "repository": "https://github.com/CSOAI-ORG/real-estate-listing-mcp",
+  "runtime": "python",
+  "entrypoint": "server.py",
+  "tools": [
+    "estimate_valuation",
+    "generate_listing",
+    "find_comparable_sales",
+    "calculate_mortgage",
+    "analyze_neighborhood"
+  ],
+  "categories": [
+    "Real Estate",
+    "Business"
+  ],
+  "pricing": {
+    "free": "50 calls/day",
+    "pro": "$9/mo"
+  }
+}

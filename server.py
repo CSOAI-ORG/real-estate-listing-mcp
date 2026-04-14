@@ -14,10 +14,7 @@ from typing import Optional
 from mcp.server.fastmcp import FastMCP
 
 mcp = FastMCP(
-    "real-estate-listing",
-    version="1.0.0",
-    description="Real estate AI - valuations, listings, comps, mortgage calc, neighborhood analysis",
-)
+    "real-estate-listing")
 
 # ---------------------------------------------------------------------------
 # Rate limiting
@@ -86,8 +83,7 @@ def estimate_valuation(
     condition: str = "good",
     year_built: int = 2000,
     lot_sqft: Optional[float] = None,
-    garage_spaces: int = 0,
-) -> dict:
+    garage_spaces: int = 0) -> dict:
     """Estimate property valuation using comp-based methodology.
 
     Args:
@@ -155,8 +151,7 @@ def generate_listing(
     property_type: str = "house",
     features: Optional[list[str]] = None,
     style: str = "professional",
-    price: Optional[float] = None,
-) -> dict:
+    price: Optional[float] = None) -> dict:
     """Generate a professional property listing description.
 
     Args:
@@ -216,8 +211,7 @@ def find_comparable_sales(
     bedrooms: int,
     property_type: str = "house",
     location_tier: str = "suburban",
-    max_results: int = 5,
-) -> dict:
+    max_results: int = 5) -> dict:
     """Find comparable recent sales for pricing analysis.
 
     Args:
@@ -279,8 +273,7 @@ def calculate_mortgage(
     down_payment_pct: float = 20.0,
     property_tax_annual: float = 0.0,
     insurance_annual: float = 0.0,
-    hoa_monthly: float = 0.0,
-) -> dict:
+    hoa_monthly: float = 0.0) -> dict:
     """Calculate monthly mortgage payment with full breakdown.
 
     Args:
@@ -353,8 +346,7 @@ def calculate_mortgage(
 @mcp.tool()
 def analyze_neighborhood(
     location_tier: str = "suburban",
-    priorities: Optional[list[str]] = None,
-) -> dict:
+    priorities: Optional[list[str]] = None) -> dict:
     """Analyze neighborhood characteristics and livability scores.
 
     Args:

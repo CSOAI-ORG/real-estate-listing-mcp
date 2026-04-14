@@ -1,0 +1,18 @@
+{
+  "name": "real-estate-listing-mcp",
+  "version": "1.0.0",
+  "description": "MEOK AI Labs — real estate listing MCP Server",
+  "main": "server.py",
+  "mcp": {
+    "name": "real estate listing",
+    "vendor": "MEOK AI Labs",
+    "homepage": "https://meok.ai",
+    "repository": "https://github.com/CSOAI-ORG/real-estate-listing-mcp",
+    "runtime": "python",
+    "tags": ["mcp", "mcp-server", "meok-ai-labs", "ai-tools"]
+  },
+  "keywords": ["mcp", "mcp-server", "meok-ai-labs"],
+  "author": "MEOK AI Labs <nicholas@meok.ai>",
+  "license": "MIT",
+  "repository": {"type": "git", "url": "https://github.com/CSOAI-ORG/real-estate-listing-mcp"}
+}

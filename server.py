@@ -6,6 +6,11 @@ Property valuation, listing generation, comparable sales,
 mortgage calculations, and neighborhood analysis.
 """
 
+
+import sys, os
+sys.path.insert(0, os.path.expanduser('~/clawd/meok-labs-engine/shared'))
+from auth_middleware import check_access
+
 import time
 import math
 from datetime import datetime, timezone
@@ -83,7 +88,7 @@ def estimate_valuation(
     condition: str = "good",
     year_built: int = 2000,
     lot_sqft: Optional[float] = None,
-    garage_spaces: int = 0) -> dict:
+    garage_spaces: int = 0, api_key: str = "") -> dict:
     """Estimate property valuation using comp-based methodology.
 
     Args:
@@ -97,6 +102,10 @@ def estimate_valuation(
         lot_sqft: Total lot size in sqft (houses only).
         garage_spaces: Number of garage spaces.
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     if not _check_rate_limit():
         return {"error": "Rate limit exceeded. Upgrade to pro tier."}
 
@@ -151,7 +160,7 @@ def generate_listing(
     property_type: str = "house",
     features: Optional[list[str]] = None,
     style: str = "professional",
-    price: Optional[float] = None) -> dict:
+    price: Optional[float] = None, api_key: str = "") -> dict:
     """Generate a professional property listing description.
 
     Args:
@@ -164,6 +173,10 @@ def generate_listing(
         style: professional | luxury | first_home | investment.
         price: Listing price (optional).
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     if not _check_rate_limit():
         return {"error": "Rate limit exceeded. Upgrade to pro tier."}
 
@@ -211,7 +224,7 @@ def find_comparable_sales(
     bedrooms: int,
     property_type: str = "house",
     location_tier: str = "suburban",
-    max_results: int = 5) -> dict:
+    max_results: int = 5, api_key: str = "") -> dict:
     """Find comparable recent sales for pricing analysis.
 
     Args:
@@ -221,6 +234,10 @@ def find_comparable_sales(
         location_tier: urban_prime | urban | suburban | rural.
         max_results: Number of comps to return (1-10).
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     if not _check_rate_limit():
         return {"error": "Rate limit exceeded. Upgrade to pro tier."}
 
@@ -273,7 +290,7 @@ def calculate_mortgage(
     down_payment_pct: float = 20.0,
     property_tax_annual: float = 0.0,
     insurance_annual: float = 0.0,
-    hoa_monthly: float = 0.0) -> dict:
+    hoa_monthly: float = 0.0, api_key: str = "") -> dict:
     """Calculate monthly mortgage payment with full breakdown.
 
     Args:
@@ -285,6 +302,10 @@ def calculate_mortgage(
         insurance_annual: Annual homeowner insurance.
         hoa_monthly: Monthly HOA fee.
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     if not _check_rate_limit():
         return {"error": "Rate limit exceeded. Upgrade to pro tier."}
 
@@ -346,13 +367,17 @@ def calculate_mortgage(
 @mcp.tool()
 def analyze_neighborhood(
     location_tier: str = "suburban",
-    priorities: Optional[list[str]] = None) -> dict:
+    priorities: Optional[list[str]] = None, api_key: str = "") -> dict:
     """Analyze neighborhood characteristics and livability scores.
 
     Args:
         location_tier: urban_prime | urban | suburban | rural.
         priorities: Ranked buyer priorities (e.g. schools, commute, safety, nightlife).
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     if not _check_rate_limit():
         return {"error": "Rate limit exceeded. Upgrade to pro tier."}
 

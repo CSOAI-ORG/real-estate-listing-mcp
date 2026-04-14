@@ -1,24 +1,174 @@
 {
   "name": "real-estate-listing-mcp",
-  "description": "MEOK AI Labs \u2014 Built by MEOK AI Labs | https://meok.ai",
-  "vendor": "MEOK AI Labs",
-  "homepage": "https://meok.ai",
-  "repository": "https://github.com/CSOAI-ORG/real-estate-listing-mcp",
-  "runtime": "python",
-  "entrypoint": "server.py",
+  "description": "**Property Intelligence AI**",
+  "version": "1.0.0",
   "tools": [
-    "estimate_valuation",
-    "generate_listing",
-    "find_comparable_sales",
-    "calculate_mortgage",
-    "analyze_neighborhood"
-  ],
-  "categories": [
-    "Real Estate",
-    "Business"
-  ],
-  "pricing": {
-    "free": "50 calls/day",
-    "pro": "$9/mo"
-  }
+    {
+      "name": "estimate_valuation",
+      "description": "Estimate property valuation using comp-based methodology.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "sqft": {
+            "type": "number"
+          },
+          "bedrooms": {
+            "type": "integer"
+          },
+          "bathrooms": {
+            "type": "integer"
+          },
+          "property_type": {
+            "type": "string"
+          },
+          "location_tier": {
+            "type": "string"
+          },
+          "condition": {
+            "type": "string"
+          },
+          "year_built": {
+            "type": "integer"
+          },
+          "lot_sqft": {
+            "type": "number",
+            "nullable": true
+          },
+          "garage_spaces": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "sqft",
+          "bedrooms",
+          "bathrooms"
+        ]
+      }
+    },
+    {
+      "name": "generate_listing",
+      "description": "Generate a professional property listing description.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "address": {
+            "type": "string"
+          },
+          "sqft": {
+            "type": "number"
+          },
+          "bedrooms": {
+            "type": "integer"
+          },
+          "bathrooms": {
+            "type": "integer"
+          },
+          "property_type": {
+            "type": "string"
+          },
+          "features": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "style": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number",
+            "nullable": true
+          }
+        },
+        "required": [
+          "address",
+          "sqft",
+          "bedrooms",
+          "bathrooms"
+        ]
+      }
+    },
+    {
+      "name": "find_comparable_sales",
+      "description": "Find comparable recent sales for pricing analysis.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "sqft": {
+            "type": "number"
+          },
+          "bedrooms": {
+            "type": "integer"
+          },
+          "property_type": {
+            "type": "string"
+          },
+          "location_tier": {
+            "type": "string"
+          },
+          "max_results": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "sqft",
+          "bedrooms"
+        ]
+      }
+    },
+    {
+      "name": "calculate_mortgage",
+      "description": "Calculate monthly mortgage payment with full breakdown.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "principal": {
+            "type": "number"
+          },
+          "annual_rate_pct": {
+            "type": "number"
+          },
+          "term_years": {
+            "type": "integer"
+          },
+          "down_payment_pct": {
+            "type": "number"
+          },
+          "property_tax_annual": {
+            "type": "number"
+          },
+          "insurance_annual": {
+            "type": "number"
+          },
+          "hoa_monthly": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "principal"
+        ]
+      }
+    },
+    {
+      "name": "analyze_neighborhood",
+      "description": "Analyze neighborhood characteristics and livability scores.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "location_tier": {
+            "type": "string"
+          },
+          "priorities": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "required": []
+      }
+    }
+  ]
 }

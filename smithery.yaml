@@ -1,10 +1,112 @@
 name: real-estate-listing-mcp
-description: "MEOK AI Labs — Built by MEOK AI Labs | https://meok.ai"
-vendor: MEOK AI Labs
-homepage: https://meok.ai
-repository: https://github.com/CSOAI-ORG/real-estate-listing-mcp
-license: MIT
-categories: [Real Estate, Business]
-tags: [real-estate, property-listing, mls, property-valuation, housing-market]
-runtime: python
-entrypoint: server.py
+description: '**Property Intelligence AI**'
+version: 1.0.0
+tools:
+- name: estimate_valuation
+  description: Estimate property valuation using comp-based methodology.
+  parameters:
+  - name: sqft
+    type: number
+    required: true
+  - name: bedrooms
+    type: integer
+    required: true
+  - name: bathrooms
+    type: integer
+    required: true
+  - name: property_type
+    type: string
+    required: false
+  - name: location_tier
+    type: string
+    required: false
+  - name: condition
+    type: string
+    required: false
+  - name: year_built
+    type: integer
+    required: false
+  - name: lot_sqft
+    type: number
+    required: false
+  - name: garage_spaces
+    type: integer
+    required: false
+- name: generate_listing
+  description: Generate a professional property listing description.
+  parameters:
+  - name: address
+    type: string
+    required: true
+  - name: sqft
+    type: number
+    required: true
+  - name: bedrooms
+    type: integer
+    required: true
+  - name: bathrooms
+    type: integer
+    required: true
+  - name: property_type
+    type: string
+    required: false
+  - name: features
+    type: array
+    required: false
+  - name: style
+    type: string
+    required: false
+  - name: price
+    type: number
+    required: false
+- name: find_comparable_sales
+  description: Find comparable recent sales for pricing analysis.
+  parameters:
+  - name: sqft
+    type: number
+    required: true
+  - name: bedrooms
+    type: integer
+    required: true
+  - name: property_type
+    type: string
+    required: false
+  - name: location_tier
+    type: string
+    required: false
+  - name: max_results
+    type: integer
+    required: false
+- name: calculate_mortgage
+  description: Calculate monthly mortgage payment with full breakdown.
+  parameters:
+  - name: principal
+    type: number
+    required: true
+  - name: annual_rate_pct
+    type: number
+    required: false
+  - name: term_years
+    type: integer
+    required: false
+  - name: down_payment_pct
+    type: number
+    required: false
+  - name: property_tax_annual
+    type: number
+    required: false
+  - name: insurance_annual
+    type: number
+    required: false
+  - name: hoa_monthly
+    type: number
+    required: false
+- name: analyze_neighborhood
+  description: Analyze neighborhood characteristics and livability scores.
+  parameters:
+  - name: location_tier
+    type: string
+    required: false
+  - name: priorities
+    type: array
+    required: false

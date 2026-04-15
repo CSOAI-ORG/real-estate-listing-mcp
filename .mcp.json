@@ -1,6 +1,6 @@
 {
   "name": "real-estate-listing-mcp",
-  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 \u0001",
+  "description": "Real Estate Listing automation via MCP. Includes estimate valuation, generate listing, find comparable sales. By MEOK AI Labs.",
   "version": "1.0.0",
   "tools": [
     {

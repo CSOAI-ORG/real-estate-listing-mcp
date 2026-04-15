@@ -1,6 +1,6 @@
 {
   "name": "real-estate-listing-mcp",
-  "description": "**Property Intelligence AI**",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Sovereign AI tools for everyone.",
   "version": "1.0.0",
   "tools": [
     {
@@ -31,8 +31,7 @@
             "type": "integer"
           },
           "lot_sqft": {
-            "type": "number",
-            "nullable": true
+            "type": "number"
           },
           "garage_spaces": {
             "type": "integer"
@@ -67,18 +66,13 @@
             "type": "string"
           },
           "features": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "nullable": true
+            "type": "array"
           },
           "style": {
             "type": "string"
           },
           "price": {
-            "type": "number",
-            "nullable": true
+            "type": "number"
           }
         },
         "required": [
@@ -160,11 +154,7 @@
             "type": "string"
           },
           "priorities": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "nullable": true
+            "type": "array"
           }
         },
         "required": []

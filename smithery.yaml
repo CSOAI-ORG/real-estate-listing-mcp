@@ -1,5 +1,5 @@
 name: real-estate-listing-mcp
-description: '**Property Intelligence AI**'
+description: MEOK AI Labs MCP Server
 version: 1.0.0
 tools:
 - name: estimate_valuation

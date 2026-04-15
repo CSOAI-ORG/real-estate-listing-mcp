@@ -22,3 +22,6 @@ Repository = "https://github.com/CSOAI-ORG/real-estate-listing-mcp"
 [tool.hatch.build.targets.wheel]
 packages = ["."]
 only-include = ["server.py"]
+
+[project.scripts]
+real_estate_listing_mcp = "server:main"

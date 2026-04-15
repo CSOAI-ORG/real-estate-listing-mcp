@@ -1,0 +1,10 @@
+{
+  "name": "real-estate-listing-mcp",
+  "description": "MEOK AI Labs \u2014 real-estate-listing-mcp",
+  "vendor": "MEOK AI Labs",
+  "homepage": "https://meok.ai",
+  "repository": "https://github.com/CSOAI-ORG/real-estate-listing-mcp",
+  "license": "MIT",
+  "runtime": "python",
+  "entryPoint": "mcp-wrapper.py"
+}

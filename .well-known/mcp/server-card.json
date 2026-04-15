@@ -1,0 +1,56 @@
+{
+  "name": "real-estate-listing",
+  "description": "\u0001",
+  "version": "1.0.0",
+  "protocol_version": "2025-11-25",
+  "publisher": {
+    "name": "MEOK AI Labs",
+    "url": "https://meok.ai",
+    "email": "nicholas@meok.ai"
+  },
+  "repository": "https://github.com/CSOAI-ORG/real-estate-listing-mcp",
+  "license": "MIT",
+  "transport": [
+    "stdio",
+    "streamable-http"
+  ],
+  "authentication": {
+    "type": "api-key",
+    "free_tier": true,
+    "free_limit": "15 calls/day"
+  },
+  "tools": [
+    {
+      "name": "estimate_valuation",
+      "description": "Estimate property valuation using comp-based methodology."
+    },
+    {
+      "name": "generate_listing",
+      "description": "Generate a professional property listing description."
+    },
+    {
+      "name": "find_comparable_sales",
+      "description": "Find comparable recent sales for pricing analysis."
+    },
+    {
+      "name": "calculate_mortgage",
+      "description": "Calculate monthly mortgage payment with full breakdown."
+    },
+    {
+      "name": "analyze_neighborhood",
+      "description": "Analyze neighborhood characteristics and livability scores."
+    }
+  ],
+  "categories": [
+    "Real Estate"
+  ],
+  "pricing": {
+    "free": {
+      "calls_per_day": 15
+    },
+    "pro": {
+      "price": "$29/month",
+      "url": "https://meok.ai/pricing"
+    }
+  }
+}

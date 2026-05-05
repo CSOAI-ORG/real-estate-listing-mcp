@@ -1,60 +1,38 @@
-# Real Estate Listing MCP Server
+<div align="center">
 
-**Property Intelligence AI**
+[![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/real-estate-listing-mcp)](https://github.com/CSOAI-ORG/real-estate-listing-mcp/stargazers)
 
-Built by [MEOK AI Labs](https://meok.ai)
+# urealU estateU listingU mcp
+
+****Property Intelligence AI****
+
+[![npm version](https://img.shields.io/npm/v/@meok-ai/real-estate-listing-mcp)](https://www.npmjs.com/package/@meok-ai/real-estate-listing-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
+
+[Installation](#installation) · [Docs](https://csoai.org) · [Report Bug](https://github.com/CSOAI-ORG/real-estate-listing-mcp/issues)
+
+</div>
 
 ---
 
-An MCP server for real estate professionals and homebuyers. Estimate property valuations, generate professional listings, find comparable sales, calculate mortgage payments, and analyze neighborhoods.
-
-## Tools
-
-| Tool | Description |
-|------|-------------|
-| `estimate_valuation` | Estimate property value using comp-based methodology with condition, age, and feature adjustments |
-| `generate_listing` | Generate professional property listing descriptions in multiple styles |
-| `find_comparable_sales` | Find comparable recent sales for pricing analysis |
-| `calculate_mortgage` | Calculate monthly mortgage payment with full amortization breakdown |
-| `analyze_neighborhood` | Analyze neighborhood characteristics and livability scores against buyer priorities |
-
-## Quick Start
+## Installation
 
 ```bash
 pip install real-estate-listing-mcp
+# or
+npm install -g @meok-ai/real-estate-listing-mcp
 ```
 
-### Claude Desktop
+## Quick Start
 
-```json
-{
-  "mcpServers": {
-    "real-estate-listing": {
-      "command": "python",
-      "args": ["-m", "server"],
-      "cwd": "/path/to/real-estate-listing-mcp"
-    }
-  }
-}
-```
+See the project repository for full documentation and examples.
 
-### Direct Usage
+## Enterprise Support
 
-```bash
-python server.py
-```
-
-## Rate Limits
-
-| Tier | Requests/Hour |
-|------|--------------|
-| Free | 60 |
-| Pro | 5,000 |
+- 📧 nicholas@csoai.org
+- 🌐 [CSOAI.org](https://csoai.org)
 
 ## License
 
-MIT - see [LICENSE](LICENSE)
-
----
-
-*Part of the MEOK AI Labs MCP Marketplace*
+MIT © [CSOAI](https://csoai.org)

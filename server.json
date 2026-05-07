@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "CSOAI-ORG/real-estate-listing-mcp",
+  "version": "1.0.0",
+  "description": "Real Estate Listing MCP Server by MEOK AI Labs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CSOAI-ORG/real-estate-listing-mcp",
+    "source": "https://github.com/CSOAI-ORG/real-estate-listing-mcp"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "real-estate-listing-mcp",
+      "version": "1.0.0",
+      "runtimeHint": "python",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

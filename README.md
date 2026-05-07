@@ -1,3 +1,5 @@
+[![real-estate-listing-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/real-estate-listing-mcp/badges/card.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/real-estate-listing-mcp)
+
 <div align="center">
 
 [![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/real-estate-listing-mcp)](https://github.com/CSOAI-ORG/real-estate-listing-mcp/stargazers)

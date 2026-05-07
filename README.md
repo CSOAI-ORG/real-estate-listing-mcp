@@ -1,3 +1,7 @@
+[![real-estate-listing-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/real-estate-listing-mcp/badges/score.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/real-estate-listing-mcp)
+[![MCP Registry](https://img.shields.io/badge/MCP_Registry-Published-green)](https://registry.modelcontextprotocol.io)
+[![PyPI](https://img.shields.io/pypi/v/real-estate-listing-mcp)](https://pypi.org/project/real-estate-listing-mcp/)
+
 [![real-estate-listing-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/real-estate-listing-mcp/badges/card.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/real-estate-listing-mcp)
 
 <div align="center">

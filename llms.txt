@@ -1,0 +1,32 @@
+# Real Estate Listing MCP
+
+> Real estate listing MCP — property search, valuation, mortgage calculator, neighbourhood analysis
+
+`real-estate-listing-mcp` is a Model Context Protocol (MCP) server by MEOK AI Labs.
+
+## Install
+
+```bash
+pip install real-estate-listing-mcp
+```
+
+Or run without installing:
+
+```bash
+uvx real-estate-listing-mcp
+```
+
+## Tools
+
+- `estimate_valuation` — Estimate property valuation using comp-based methodology.
+- `generate_listing` — Generate a professional property listing description.
+- `find_comparable_sales` — Find comparable recent sales for pricing analysis.
+- `calculate_mortgage` — Calculate monthly mortgage payment with full breakdown.
+- `analyze_neighborhood` — Analyze neighborhood characteristics and livability scores.
+
+## Links
+
+- Source: https://github.com/CSOAI-ORG/real-estate-listing-mcp
+- PyPI: https://pypi.org/project/real-estate-listing-mcp/
+- MEOK AI Labs: https://meok.ai
+- Council of AI: https://councilof.ai

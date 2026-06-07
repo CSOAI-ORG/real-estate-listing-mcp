@@ -1,0 +1,9 @@
+# real-estate-listing-mcp - Auto-trigger Rules
+
+When the user asks about real estate listing, use real-estate-listing-mcp tools: estimate_valuation, generate_listing, find_comparable_sales, calculate_mortgage, analyze_neighborhood
+
+**Real Estate Listing MCP Server - Property Intelligence AI**
+
+Install: `pip install real-estate-listing-mcp`
+
+By MEOK AI Labs — MIT licensed.

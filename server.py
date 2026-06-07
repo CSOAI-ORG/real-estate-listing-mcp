@@ -8,7 +8,6 @@ mortgage calculations, and neighborhood analysis.
 
 
 import sys, os
-sys.path.insert(0, os.path.expanduser('~/clawd/meok-labs-engine/shared'))
 from auth_middleware import check_access
 
 import time
@@ -132,7 +131,7 @@ def estimate_valuation(
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
 
     if not _check_rate_limit():
         return {"error": "Rate limit exceeded. Upgrade to pro tier."}
@@ -231,7 +230,7 @@ def generate_listing(
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
 
     if not _check_rate_limit():
         return {"error": "Rate limit exceeded. Upgrade to pro tier."}
@@ -321,7 +320,7 @@ def find_comparable_sales(
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
 
     if not _check_rate_limit():
         return {"error": "Rate limit exceeded. Upgrade to pro tier."}
@@ -418,7 +417,7 @@ def calculate_mortgage(
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
 
     if not _check_rate_limit():
         return {"error": "Rate limit exceeded. Upgrade to pro tier."}
@@ -519,7 +518,7 @@ def analyze_neighborhood(
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
 
     if not _check_rate_limit():
         return {"error": "Rate limit exceeded. Upgrade to pro tier."}
@@ -562,5 +561,8 @@ def analyze_neighborhood(
     }
 
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+if __name__ == '__main__':
+    main()

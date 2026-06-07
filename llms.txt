@@ -1,32 +1,36 @@
-# Real Estate Listing MCP
-
-> Real estate listing MCP — property search, valuation, mortgage calculator, neighbourhood analysis
-
-`real-estate-listing-mcp` is a Model Context Protocol (MCP) server by MEOK AI Labs.
+# real-estate-listing-mcp
+# **Real Estate Listing MCP Server - Property Intelligence AI**
 
 ## Install
-
 ```bash
 pip install real-estate-listing-mcp
 ```
 
-Or run without installing:
-
-```bash
-uvx real-estate-listing-mcp
-```
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label.
 
 ## Tools
 
-- `estimate_valuation` — Estimate property valuation using comp-based methodology.
-- `generate_listing` — Generate a professional property listing description.
-- `find_comparable_sales` — Find comparable recent sales for pricing analysis.
-- `calculate_mortgage` — Calculate monthly mortgage payment with full breakdown.
-- `analyze_neighborhood` — Analyze neighborhood characteristics and livability scores.
+### `estimate_valuation`
+Estimate property valuation using comp-based methodology.
 
-## Links
+### `generate_listing`
+Generate a professional property listing description.
 
-- Source: https://github.com/CSOAI-ORG/real-estate-listing-mcp
-- PyPI: https://pypi.org/project/real-estate-listing-mcp/
-- MEOK AI Labs: https://meok.ai
-- Council of AI: https://councilof.ai
+### `find_comparable_sales`
+Find comparable recent sales for pricing analysis.
+
+### `calculate_mortgage`
+Calculate monthly mortgage payment with full breakdown.
+
+### `analyze_neighborhood`
+Analyze neighborhood characteristics and livability scores.
+
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT licensed
+
+## Pairs with
+Governance moat: pair this tool with any of MEOK's 38 governance MCPs (EU AI Act, DORA, NIS2, CRA, GDPR, ISO 42001, etc.) for full compliance coverage.

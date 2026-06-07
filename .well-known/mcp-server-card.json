@@ -1,0 +1,28 @@
+{
+  "name": "real-estate-listing-mcp",
+  "title": "Real Estate Listing Mcp",
+  "description": "Real Estate Listing automation via MCP. Includes estimate valuation, generate listing, find comparable sales. By MEOK AI Labs.",
+  "version": "1.0.6",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "estimate_valuation"
+    },
+    {
+      "name": "generate_listing"
+    },
+    {
+      "name": "find_comparable_sales"
+    },
+    {
+      "name": "calculate_mortgage"
+    },
+    {
+      "name": "analyze_neighborhood"
+    }
+  ]
+}

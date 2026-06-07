@@ -1,0 +1,23 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "real-estate-listing-mcp",
+    "description": "Real Estate Listing MCP Server by MEOK AI Labs",
+    "version": "1.0.6",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "real-estate-listing-mcp"
+      }
+    ],
+    "capabilities": [
+      "estimate_valuation",
+      "generate_listing",
+      "find_comparable_sales",
+      "calculate_mortgage",
+      "analyze_neighborhood"
+    ]
+  }
+}

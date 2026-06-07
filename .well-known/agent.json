@@ -1,0 +1,68 @@
+{
+  "name": "real-estate-listing-mcp",
+  "description": "Real Estate Listing MCP Server by MEOK AI Labs",
+  "url": "https://proofof.ai/scorecard/real-estate-listing-mcp.html",
+  "version": "1.0.6",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "estimate_valuation",
+      "name": "Estimate Valuation",
+      "description": "estimate_valuation via real-estate-listing-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "generate_listing",
+      "name": "Generate Listing",
+      "description": "generate_listing via real-estate-listing-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "find_comparable_sales",
+      "name": "Find Comparable Sales",
+      "description": "find_comparable_sales via real-estate-listing-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "calculate_mortgage",
+      "name": "Calculate Mortgage",
+      "description": "calculate_mortgage via real-estate-listing-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "analyze_neighborhood",
+      "name": "Analyze Neighborhood",
+      "description": "analyze_neighborhood via real-estate-listing-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}
